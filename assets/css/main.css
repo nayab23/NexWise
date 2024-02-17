@@ -4749,7 +4749,7 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::after {
 }
 
 .hero__ico {
-  min-height: 770px;
+  min-height: 710px;
   padding-top: 220px;
   overflow: hidden;
 }
@@ -4821,7 +4821,7 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::after {
   object-fit: cover;
 }
 .hero__bg {
-  background-position: center 170px;
+  background-position: center 110px;
   position: absolute;
   bottom: 0;
   background-repeat: no-repeat;
@@ -4833,9 +4833,47 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::after {
   z-index: -1;
 }
 
-@media only screen and (min-width: 1200px) and (max-width: 1500px) {
+
+@media (min-width: 2700px) and (max-width: 3400px){
+  .hero__ico {
+    min-height: 1085px;
+  }
+
   .hero__bg {
-    background-position: center 422px;
+    background-position:center -48px;
+  }
+}
+@media (min-width: 2100px) and (max-width: 2700px){
+  .hero__ico {
+    min-height: 935px;
+  }
+
+  .hero__bg {
+    background-position:center 102px;
+  }
+}
+@media (min-width: 1700px) and (max-width: 2100px){
+  .hero__ico {
+    min-height: 805px;
+  }
+  .hero__bg {
+    background-position:center 98px;
+  }
+}
+@media (min-width: 1600px) and (max-width: 1700px){
+  .hero__ico {
+    min-height: 835px;
+  }
+  .hero__bg {
+    background-position: center 162px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1500px) {
+  .hero__ico {
+    min-height: 865px;
+  }
+  .hero__bg {
+    background-position: center 342px;
   }
 }
 
