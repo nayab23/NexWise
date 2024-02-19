@@ -3412,7 +3412,7 @@ h6 {
     outline-color: var(--primary);
     outline-offset: 0px;
     text-shadow: none;
-    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all 0.5ms cubic-bezier(0.19, 1, 0.22, 1);
   } 
 
 .header__account a i {
@@ -3457,7 +3457,7 @@ h6 {
   outline-color: #7e7e7e;
   outline-offset: 0px;
   text-shadow: none;
-  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 0.5ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 .header__language button:hover{
   background-color: #fff;
@@ -4172,7 +4172,7 @@ h6 {
   outline-color: var(--primary);
   outline-offset: 0px;
   text-shadow: none;
-  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 0.5ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .thm-btn:hover {
