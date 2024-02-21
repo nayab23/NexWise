@@ -53,25 +53,36 @@
     <div class="body_wrap">
         
         <!-- header start -->
-        <header class="site-header header--transparent ico-header py-3">
+        <header class="site-header header--transparent ico-header">
             <div class="header__main-wrap stricky">
-                <div class="container mxw_1640 p-3">
+                <div class="container mxw_1640">
                     <div class="header__main ul_li_between">
                         <div class="header__left ul_li">
                             <div class="header__logo">
-                                <a href="index.html"><img src="assets/img/logo/logo.svg" style="height:50px" alt=""></a>
+                                <a href="index.html"><img src="assets/img/logo/logo.svg" style="height:80px" alt=""></a>
                             </div>
                         </div>
                         <div class="header__action ul_li">
                             <div class="header__language">
-                                <div class="dropdown">
+                                <div class="dropdown w-auto">
                                     <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        ENGLISH <i class="fas fa-chevron-down"></i>
+                                        <span class="d-md-block d-none">ENGLISH</span>
+                                        <span class="d-md-none d-block">EN</span>
+                                        <i class="fas fa-chevron-down"></i>
                                     </button>
                                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                        <a class="dropdown-item" href="index.html">English</a>
-                                        <a class="dropdown-item" href="./traditional-chinese.html">Traditional Chinese</a>
-                                        <a class="dropdown-item" href="./simplified-chinese.html">Simplified Chinese</a>
+                                        <a class="dropdown-item" href="index.html">
+                                            <span class="d-md-block d-none">English</span>
+                                            <span class="d-md-none d-block">En</span>
+                                        </a>
+                                        <a class="dropdown-item" href="./simplified-chinese.html">
+                                            <span class="d-md-block d-none">Simplified Chinese</span>
+                                            <span class="d-md-none d-block">zh-CN</span>
+                                        </a>
+                                        <a class="dropdown-item" href="./traditional-chinese.html">
+                                            <span class="d-md-block d-none">Traditional Chinese</span>
+                                            <span class="d-md-none d-block">zh-HK</span>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -93,7 +104,7 @@
                   <source src="./assets/video/speed-of-digital-lights.mp4" type="video/mp4">
               </video>
                 <div class="hero__bg" data-background="assets/img/bg/hero_bg.png"></div>
-                <div class="container">
+                <div class="container position-relative z-1">
                     <div class="row">
                         <div class="col-lg-7">
                             <div class="hero__content">
@@ -125,22 +136,22 @@
                 </div>
                 <div class="hero__coin">
                     <div class="coin coin--1">
-                        <img src="assets/img/coin/bitcoin-3d-icon-pack-png.png" style="height: 90px;" alt="">
+                        <img src="assets/img/coin/OpenSea.png" style="height: 80px;" alt="">
                     </div>
                     <div class="coin coin--2">
-                        <img src="assets/img/coin/ethereum-coin.webp" style="height: 65px;" alt="">
+                        <img src="assets/img/coin/bitcoin-3d-icon-pack-png.png" style="height: 75px;" alt="">
                     </div>
                     <div class="coin coin--3">
-                        <img src="assets/img/coin/doge-coin.png" style="width: 90px;" alt="">
+                        <img src="assets/img/coin/solanart-logo.svg" style="width: 80px;" alt="">
                     </div>
                     <div class="coin coin--4">
-                        <img src="assets/img/coin/ada-coin.png" style="height: 55px;" alt="">
+                        <img src="assets/img/coin/ethereum-logo.png" style="height: 55px;" alt="">
                     </div>
                     <div class="coin coin--5">
-                        <img src="assets/img/coin/xrp-coin.webp" style="width: 70px;" alt="">
+                        <img src="assets/img/coin/XRP.png" style="width: 70px;" alt="">
                     </div>
                     <div class="coin coin--6">
-                        <img src="assets/img/coin/solana.webp" style="height: 80px;" alt="">
+                        <img src="assets/img/coin/Solana_logo.png.webp" style="height: 70px;" alt="">
                     </div>
                 </div>
             </section>
@@ -170,7 +181,7 @@
                         <div class="col-lg-5 mt-30">
                             <div class="token__content wow "  data-aos="fade-right">
                                 <div class="sec-title mb-20">
-                                    <h5 class="sec-title__subtitle">Single Asset, Dual Impact</h5>
+                                    <h5 class="sec-title__subtitle d-block">Single Asset, Dual Impact</h5>
                                     <h2 class="sec-title__title">Experience Our Unique Liquidity Model</h2>
                                 </div>
                                 <div class="token__info mt-40">
@@ -197,13 +208,13 @@
             <section class="token-info pos-rel pt-100 pb-100 d-flex align-items-center" style="min-height: 100vh;">
                 <div class="container">
                     <div class="row d-flex flex-lg-row flex-column-reverse">
-                        <div class="col-lg-6" data-aos="fade-left">
+                        <div class="col-lg-6 d-flex flex-column align-items-center justify-content-center" data-aos="fade-left">
                             <img src="assets/img/trade/unique.svg" class="left-right-ani img-fluid" alt="">
                             
                         </div>
-                        <div class="col-lg-5 d-flex flex-column justify-content-center  offset-lg-1" data-aos="fade-right">
+                        <div class="col-lg-6 d-flex flex-column justify-content-center " data-aos="fade-right">
                             <div class="sec-title">
-                                <h5 class="sec-title__subtitle">Secure Trading, Intelligent Protection</h5>
+                                <h5 class="sec-title__subtitle d-block">Secure Trading, Intelligent Protection</h5>
                                 <h2 class="sec-title__title mb-25">Advanced Risk Management Tailored for You</h2>
                             </div>
                         <p class="fs-5">Embrace a trading environment where sophisticated risk control systems meet the unique challenges of leveraged and liquidation strategies, ensuring your investments are safeguarded.</p>

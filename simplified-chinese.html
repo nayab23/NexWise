@@ -53,25 +53,36 @@
     <div class="body_wrap">
         
         <!-- header start -->
-        <header class="site-header header--transparent ico-header py-3">
+        <header class="site-header header--transparent ico-header">
             <div class="header__main-wrap stricky">
-                <div class="container mxw_1640 p-3">
+                <div class="container mxw_1640">
                     <div class="header__main ul_li_between">
                         <div class="header__left ul_li">
                             <div class="header__logo">
-                                <a href="index.html"><img src="assets/img/logo/logo.svg" style="height:50px" alt=""></a>
+                                <a href="index.html"><img src="assets/img/logo/logo.svg" style="height:80px" alt=""></a>
                             </div>
                         </div>
                         <div class="header__action ul_li">
                             <div class="header__language">
-                                <div class="dropdown">
+                                <div class="dropdown w-auto">
                                     <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Simplified Chinese <i class="fas fa-chevron-down"></i>
+                                        <span class="d-md-block d-none">Simplified Chinese</span>
+                                        <span class="d-md-none d-block">zh-CN</span>
+                                        <i class="fas fa-chevron-down"></i>
                                     </button>
                                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                        <a class="dropdown-item" href="index.html">English</a>
-                                        <a class="dropdown-item" href="./traditional-chinese.html">Traditional Chinese</a>
-                                        <a class="dropdown-item" href="./simplified-chinese.html">Simplified Chinese</a>
+                                        <a class="dropdown-item" href="index.html">
+                                            <span class="d-md-block d-none">English</span>
+                                            <span class="d-md-none d-block">En</span>
+                                        </a>
+                                        <a class="dropdown-item" href="./simplified-chinese.html">
+                                            <span class="d-md-block d-none">Simplified Chinese</span>
+                                            <span class="d-md-none d-block">zh-CN</span>
+                                        </a>
+                                        <a class="dropdown-item" href="./traditional-chinese.html">
+                                            <span class="d-md-block d-none">Traditional Chinese</span>
+                                            <span class="d-md-none d-block">zh-HK</span>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -93,12 +104,12 @@
                   <source src="./assets/video/speed-of-digital-lights.mp4" type="video/mp4">
               </video>
                 <div class="hero__bg" data-background="assets/img/bg/hero_bg.png"></div>
-                <div class="container">
+                <div class="container position-relative z-1">
                     <div class="row">
                         <div class="col-lg-7">
-                            <div class="hero__content">
-                                <h1 class="title mb-25" data-aos="fade-right">创新自由交易</h1>
-                                <h1 class="mb-25" data-aos="fade-left">解锁无限交易可能</h1>
+                            <div class="hero__content pt-lg-4">
+                                <h1 class="title mb-25 pt-lg-5" data-aos="fade-right">创新自由交易</h1>
+                                <h1 class="mb-25" data-aos="fade-left"> 解锁无限交易可能</h1>
                                 <p class="fs-5" data-aos="fade-up">我们的平台赋予您自由创建交易对的能力，为去中心化金融空间带来前所未有的灵活性。</p>
                                 
                                
@@ -125,22 +136,22 @@
                 </div>
                 <div class="hero__coin">
                     <div class="coin coin--1">
-                        <img src="assets/img/coin/bitcoin-3d-icon-pack-png.png" style="height: 90px;" alt="">
+                        <img src="assets/img/coin/OpenSea.png" style="height: 80px;" alt="">
                     </div>
                     <div class="coin coin--2">
-                        <img src="assets/img/coin/ethereum-coin.webp" style="height: 65px;" alt="">
+                        <img src="assets/img/coin/bitcoin-3d-icon-pack-png.png" style="height: 75px;" alt="">
                     </div>
                     <div class="coin coin--3">
-                        <img src="assets/img/coin/doge-coin.png" style="width: 90px;" alt="">
+                        <img src="assets/img/coin/solanart-logo.svg" style="width: 80px;" alt="">
                     </div>
                     <div class="coin coin--4">
-                        <img src="assets/img/coin/ada-coin.png" style="height: 55px;" alt="">
+                        <img src="assets/img/coin/ethereum-logo.png" style="height: 55px;" alt="">
                     </div>
                     <div class="coin coin--5">
-                        <img src="assets/img/coin/xrp-coin.webp" style="width: 70px;" alt="">
+                        <img src="assets/img/coin/XRP.png" style="width: 70px;" alt="">
                     </div>
                     <div class="coin coin--6">
-                        <img src="assets/img/coin/solana.webp" style="height: 80px;" alt="">
+                        <img src="assets/img/coin/Solana_logo.png.webp" style="height: 70px;" alt="">
                     </div>
                 </div>
             </section>
@@ -170,7 +181,7 @@
                         <div class="col-lg-5 mt-30">
                             <div class="token__content wow "  data-aos="fade-right">
                                 <div class="sec-title mb-20">
-                                    <h5 class="sec-title__subtitle">单一资产，双重影响</h5>
+                                    <h5 class="sec-title__subtitle d-block">单一资产，双重影响</h5>
                                     <h2 class="sec-title__title">体验我们独特的流动性模型</h2>
                                 </div>
                                 <div class="token__info mt-40">
@@ -197,13 +208,13 @@
             <section class="token-info pos-rel pt-100 pb-100 d-flex align-items-center" style="min-height: 100vh;">
                 <div class="container">
                     <div class="row d-flex flex-lg-row flex-column-reverse">
-                        <div class="col-lg-6" data-aos="fade-left">
+                        <div class="col-lg-6 d-flex flex-column align-items-center justify-content-center" data-aos="fade-left">
                             <img src="assets/img/trade/unique.svg" class="left-right-ani img-fluid" alt="">
                             
                         </div>
-                        <div class="col-lg-5 d-flex flex-column justify-content-center  offset-lg-1" data-aos="fade-right">
+                        <div class="col-lg-6 d-flex flex-column justify-content-center " data-aos="fade-right">
                             <div class="sec-title">
-                                <h5 class="sec-title__subtitle">安全交易，智慧防护</h5>
+                                <h5 class="sec-title__subtitle d-block">安全交易，智慧防护</h5>
                                 <h2 class="sec-title__title mb-25">为您量身定制的先进风险管理</h2>
                             </div>
                         <p class="fs-5">拥抱一个交易环境，在这里精密的风险控制系统迎合了杠杆和清算策略的独特挑战，确保您的投资受到保护。</p>
@@ -224,14 +235,14 @@
 
 
             <!-- contact start -->
-                <section class="ico-contact pos-rel" id="contact">
+            <section class="ico-contact pos-rel" id="contact">
                 <div class="container">
                     <div class="ico-contact__wrap">
                         <h1  data-aos="fade-down">加入我们的社区</h1>
                         <h3 class="text-ceter">NFT 作为万能钥匙：不仅仅是通往新世界的门户</h3>
                        <div class="d-flex justify-content-center mt-5">
                            <a class="thm-btn" href="https://discord.com/invite/DuiDuiNFT" target="_blank"> 
-                            <img src="assets/img/icon/discord.svg" class="mr-2" alt="">开始使用</a>
+                            <img src="assets/img/icon/discord.svg" class="mr-2" alt=""> 开始使用</a>
                        </div>
                         <div class="ico-contact__shape-img">
                             <div class="shape shape--1">

@@ -73,6 +73,27 @@ html {
   scroll-behavior: smooth;
 }
 
+.mouse-scroll-cursor{
+  display: none;
+}
+@media (min-width: 1200px) {
+  body {
+    cursor: none;
+  }
+  .mouse-scroll-cursor{
+    width: 32px;
+    height: 43px;
+    border: 1px solid var(--color-white);
+    border-radius: 19px;
+    position: fixed;
+    overflow: hidden;
+    margin: 0 auto;
+    pointer-events: none; 
+    z-index: 9999;
+    display: block;
+    
+  }
+}
 body {
   padding: 0;
   margin: 0;
@@ -84,18 +105,6 @@ body {
   color: var(--color-default);
   /* background: #0B0B29; */
   background: #010112;
-  cursor: none;
-}
-.mouse-scroll-cursor{
-  width: 32px;
-  height: 43px;
-  border: 1px solid var(--color-white);
-  border-radius: 19px;
-  position: fixed;
-  overflow: hidden;
-  margin: 0 auto;
-  pointer-events: none; 
-  z-index: 9999;
   
 }
 img {
@@ -3620,10 +3629,10 @@ h6 {
 @media (max-width: 655px) {
   
   .header__logo img{
-    height: 40px !important;
+    height: 60px !important;
   }
   .header__language button{
-    min-width: 110px;
+    min-width: 80px;
   }
   .ico-header .header__language{
     margin-left: 3px;
@@ -3663,10 +3672,10 @@ h6 {
   }
 }
 
+.ico-header .header__main-wrap {
+  padding: 10px 0px;
+}
 @media (max-width: 1199px) {
-  .ico-header .header__main-wrap {
-    padding: 15px 0px;
-  }
 }
 
 @media (max-width: 991px) {
@@ -4798,14 +4807,14 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::after {
 }
 
 .hero__ico {
-  min-height: 710px;
-  padding-top: 220px;
-  overflow: hidden;
+  min-height: 770px;
+    padding-top: 180px;
+    overflow: hidden;
 }
 
 @media (max-width: 1199px) {
   .hero__ico {
-    min-height: 930px;
+    min-height: 830px;
   }
 }
 
@@ -4828,6 +4837,7 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::after {
 @media (max-width: 460px) {
   .hero__ico {
     min-height: 690px;
+    border-bottom: 5px solid var(--primary);
   }
 }
 
@@ -4870,7 +4880,7 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::after {
   object-fit: cover;
 }
 .hero__bg {
-  background-position: center 110px;
+  background-position: center 152px;
   position: absolute;
   bottom: 0;
   background-repeat: no-repeat;
@@ -5035,13 +5045,13 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::after {
   }
 }
 
-@media (max-width: 1199px) {
+/* @media (max-width: 1199px) {
   .hero__coin .coin--2 {
     bottom: 9.7%;
   }
-}
+} */
 
-@media (max-width: 767px) {
+@media (max-width: 1199px) {
   .hero__coin .coin--2 {
     bottom: 4.7%;
     left: 36%;
@@ -5061,13 +5071,13 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::after {
   }
 }
 
-@media (max-width: 1199px) {
+/* @media (max-width: 1199px) {
   .hero__coin .coin--3 {
     bottom: 8%;
   }
-}
+} */
 
-@media (max-width: 767px) {
+@media (max-width: 1199px) {
   .hero__coin .coin--3 {
     right: 3%;
     bottom: 5%;
@@ -5094,7 +5104,7 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::after {
     bottom: 20%;
   }
 }
-@media (max-width: 460px) {
+@media (max-width: 1199px) {
   .hero__coin .coin--4 {
     right: 64%;
     bottom: 13%;
@@ -5104,7 +5114,7 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::after {
 .hero__coin .coin--5 {
   right: 10%;
   top: 23%;
-  animation-duration: 1.5s;
+  animation-duration: 2s;
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1500px) {
@@ -5113,22 +5123,25 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::after {
   }
 }
 
-@media (max-width: 1199px) {
+/* @media (max-width: 1199px) {
   .hero__coin .coin--5 {
     right: 3%;
     top: 20%;
   }
-}
+} */
 
-@media (max-width: 767px) {
+@media (max-width: 1199px) {
   .hero__coin .coin--5 {
-    right: 12px;
-    top: 20%;
+    right: 79%;
+    top: 72%;
   }
+  .hero__coin .coin--5 img{
+    width: 40px !important;
+}
 }
 @media (max-width: 580px) {
 .header__language .dropdown-menu{
-  left: -80px !important;
+  min-width: 100%;
 }
 }
 .hero__coin .coin--6 {
@@ -5138,18 +5151,36 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::after {
   animation-duration: 4s;
 }
 
-@media (max-width: 1199px) {
+/* @media (max-width: 1199px) {
   .hero__coin .coin--6 {
     bottom: 21%;
   }
-}
+} */
 
-@media (max-width: 767px) {
+@media (max-width: 1199px) {
+  .hero__ico .col-lg-7{
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+ .hero__content h1, .hero__content p{
+   text-align: center;
+  }
+  .hero__content{
+    padding-right: 0 !important;
+    width: 80%;
+  }
   .hero__coin .coin--6 {
-    bottom: 18%;
+    bottom: 15%;
     right: 29%;
   }
 }
+@media (max-width: 763px) {
+  .hero__content{
+    width: 100%;
+  }}
 
 .hero__explore span {
   color: var(--color-white);
@@ -7928,14 +7959,7 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::after {
   font-weight: 500;
 }
 
-@media (max-width: 767px) {
-  .ico-contact__wrap {
-    padding: 40px 20px;
-  }
-  .ico-contact__wrap h1{
-    font-size: 50px;
-  }
-}
+
 
 .ico-contact__wrap .title {
   font-size: 30px;
@@ -10316,11 +10340,11 @@ blockquote span {
 }
 
 .sec-title__title {
-  font-size: 40px;
+  font-size: 31px;
   line-height: 55px;
   font-weight: 700;
   color: var(--color-white);
-  letter-spacing: -1.6px;
+  letter-spacing: 2px;
 }
 
 @media (max-width: 767px) {
@@ -10895,4 +10919,40 @@ blockquote span {
 100% {
     transform: translateY(0);
 }
+}
+
+@media (max-width: 767px) {
+  .ico-contact__wrap {
+    padding: 40px 20px;
+  }
+  .ico-contact__wrap h1{
+    text-align: center;
+    font-size: 40px;
+  }
+  .sec-title__subtitle{
+    text-align: center;
+    font-size: 35px;
+    
+  }
+  .sec-title__title {
+    text-align: center;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 2px;
+  }
+  p.fs-5{
+    text-align: center;
+    font-size: 1.1rem !important;
+  }
+  .footer__copyright-text, .hero__content h1, .sec-title__subtitle{
+    text-align: center !important;
+  }
+  .token{
+    min-height: auto !important;
+    padding: 120px 0 0;
+  }
+  .token-info .img-fluid{
+    max-width: 85%;
+    margin-top: 50px;
+  }
 }

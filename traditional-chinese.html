@@ -53,25 +53,36 @@
     <div class="body_wrap">
         
         <!-- header start -->
-        <header class="site-header header--transparent ico-header py-3">
+        <header class="site-header header--transparent ico-header">
             <div class="header__main-wrap stricky">
-                <div class="container mxw_1640 p-3">
+                <div class="container mxw_1640">
                     <div class="header__main ul_li_between">
                         <div class="header__left ul_li">
                             <div class="header__logo">
-                                <a href="index.html"><img src="assets/img/logo/logo.svg" style="height:50px" alt=""></a>
+                                <a href="index.html"><img src="assets/img/logo/logo.svg" style="height:80px" alt=""></a>
                             </div>
                         </div>
                         <div class="header__action ul_li">
                             <div class="header__language">
-                                <div class="dropdown">
+                                <div class="dropdown w-auto">
                                     <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Traditional Chinese <i class="fas fa-chevron-down"></i>
+                                        <span class="d-md-block d-none">Traditional Chinese</span>
+                                        <span class="d-md-none d-block">zh-HK</span>
+                                        <i class="fas fa-chevron-down"></i>
                                     </button>
                                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                        <a class="dropdown-item" href="index.html">English</a>
-                                        <a class="dropdown-item" href="./traditional-chinese.html">Traditional Chinese</a>
-                                        <a class="dropdown-item" href="./simplified-chinese.html">Simplified Chinese</a>
+                                        <a class="dropdown-item" href="index.html">
+                                            <span class="d-md-block d-none">English</span>
+                                            <span class="d-md-none d-block">En</span>
+                                        </a>
+                                        <a class="dropdown-item" href="./simplified-chinese.html">
+                                            <span class="d-md-block d-none">Simplified Chinese</span>
+                                            <span class="d-md-none d-block">zh-CN</span>
+                                        </a>
+                                        <a class="dropdown-item" href="./traditional-chinese.html">
+                                            <span class="d-md-block d-none">Traditional Chinese</span>
+                                            <span class="d-md-none d-block">zh-HK</span>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -93,11 +104,11 @@
                   <source src="./assets/video/speed-of-digital-lights.mp4" type="video/mp4">
               </video>
                 <div class="hero__bg" data-background="assets/img/bg/hero_bg.png"></div>
-                <div class="container">
+                <div class="container position-relative z-1">
                     <div class="row">
                         <div class="col-lg-7">
-                            <div class="hero__content">
-                                <h1 class="title mb-25" data-aos="fade-right">創新自由交易</h1>
+                            <div class="hero__content pt-lg-4">
+                                <h1 class="title mb-25 pt-lg-5" data-aos="fade-right">創新自由交易</h1>
                                 <h1 class="mb-25" data-aos="fade-left"> 解鎖無限交易可能</h1>
                                 <p class="fs-5" data-aos="fade-up">我們的平台賦予您自由創建交易對的能力，為去中心化金融空間帶來前所未有的靈活性。</p>
                                 
@@ -170,7 +181,7 @@
                         <div class="col-lg-5 mt-30">
                             <div class="token__content wow "  data-aos="fade-right">
                                 <div class="sec-title mb-20">
-                                    <h5 class="sec-title__subtitle">單一資產，雙重影響</h5>
+                                    <h5 class="sec-title__subtitle d-block">單一資產，雙重影響</h5>
                                     <h2 class="sec-title__title">體驗我們獨特的流動性模型</h2>
                                 </div>
                                 <div class="token__info mt-40">
@@ -197,13 +208,13 @@
             <section class="token-info pos-rel pt-100 pb-100 d-flex align-items-center" style="min-height: 100vh;">
                 <div class="container">
                     <div class="row d-flex flex-lg-row flex-column-reverse">
-                        <div class="col-lg-6" data-aos="fade-left">
+                        <div class="col-lg-6 d-flex flex-column align-items-center justify-content-center" data-aos="fade-left">
                             <img src="assets/img/trade/unique.svg" class="left-right-ani img-fluid" alt="">
                             
                         </div>
                         <div class="col-lg-5 d-flex flex-column justify-content-center  offset-lg-1" data-aos="fade-right">
                             <div class="sec-title">
-                                <h5 class="sec-title__subtitle">安全交易，智慧防護</h5>
+                                <h5 class="sec-title__subtitle d-block">安全交易，智慧防護</h5>
                                 <h2 class="sec-title__title mb-25">為您量身定制的先進風險管理</h2>
                             </div>
                         <p class="fs-5">擁抱一個交易環境，在這裡精密的風險控制系統迎合了杠桿和清算策略的獨特挑戰，確保您的投資受到保護。</p>
