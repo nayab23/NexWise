@@ -5135,13 +5135,23 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::after {
     right: 79%;
     top: 72%;
   }
-  .hero__coin .coin--5 img{
-    width: 40px !important;
-}
+ 
 }
 @media (max-width: 580px) {
 .header__language .dropdown-menu{
   min-width: 100%;
+}
+.hero__coin .coin--1 img{
+  height: 70px !important;
+}
+.hero__coin .coin--5 img{
+  width: 40px !important;
+}
+.hero__coin .coin--3 img{
+  width: 60px !important;
+}
+.hero__coin .coin--2 img{
+  height: 70px !important;
 }
 }
 .hero__coin .coin--6 {
