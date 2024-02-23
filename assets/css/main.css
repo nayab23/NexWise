@@ -4836,10 +4836,14 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::after {
 }
 @media (max-width: 460px) {
   .hero__ico {
-    min-height: 690px;
+    min-height: auto;
     border-bottom: 5px solid var(--primary);
+    padding-bottom: 210px;
+      padding-top: 150px;
   }
 }
+
+
 
 .hero__blockchain {
   min-height: 1060px;
@@ -10965,4 +10969,22 @@ blockquote span {
     max-width: 85%;
     margin-top: 50px;
   }
+  .token .col-lg-7 dotlottie-player{
+    margin-left: -8px;
+    margin-bottom: 100px;
+  }
+}
+@media (max-width: 345px) {
+  .hero__content .title{
+    font-size: 38px;
+  }
+  .hero__content h1{
+    font-size: 22px;
+  }
+  p.fs-5 {
+    font-size: 1.04rem !important;
+  }
+  .sec-title__subtitle {
+    font-size: 27px;
+}
 }
